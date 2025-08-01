@@ -1,0 +1,70 @@
+41/78: What is the name of the service that runs scripts/commands periodically?
+cron
+runner
+launcher
+scheduler
+
+42/78: What is the default log storage directory?
+/sys/log
+/etc/log
+/var/log
+/usr/log
+
+43/78: user1 has created a script.sh file in /opt folder with the following attributes: 710 user1:user1 Which actions can be performed to allow user2 to execute this script?
+chown user2:user1 /opt/script.sh
+Nothing needs to be done, user2 can execute this script as is
+chmod 715/opt/script.sh
+chown user1:user2 /opt/script.sh
+chmod 711/opt/script.sh
+chown user1:user2 /opt/script.sh && chmod 750 /opt/script.sh
+
+
+44/78: What command will make a connection to host H1 via bastion host B1 using key id_rsa?
+$ ssh-proxy B1 -key id_rsa-host H1
+$ ssh-i id_rsa-o "ProxyCommand ssh -W %h:%p B1" H1
+$ ssh-i id_rsa -o "ProxyCommand ssh -W %h:%p B1 --target H1"
+$ ssh-private-key id_rsa -o "ProxyCommand ssh -W %h:%p B1" H1
+
+
+45/78: Given the following iptables command, what will it do? $ sudo iptables -L
+load iptables kernel module
+list current connections
+list last rule being applied
+list the rules in a chain or all chains
+
+46/78: What command(s) will show first 10 lines of file:
+head -n 10/var/log/messages
+cat -n 10 /var/log/messages
+head /var/log/messages
+cat/var/log/messages
+
+
+47/78: What do the following file permissions mean? -rws--xr-x
+User - allow read, write, deny execute; Group - allow execute, deny read, write; Others - allow read, execute, deny write with suid bit
+User - allow read, write, execute; Group - allow execute, deny read, write; Others - allow read, execute, deny write with sticky bit
+User - allow read, write, execute; Group - allow execute, deny read, write; Others - allow read, execute, deny write
+User - allow read, write, execute; Group - allow execute, deny read, write; Others - allow read, execute, deny write with suid bit
+
+
+48/78: Which selinux mode writes policy violations to audit log?
+disabled
+none
+permissive
+enforcing
+
+
+49/78: How to distinguish whether command is internal or external to Linux kernel?
+which command
+O type command
+echo $(command)
+check command
+
+
+
+50/78: How to display all rules in iptables?
+iptables -l
+iptables -L
+iptables --all
+iptables -A
+
+

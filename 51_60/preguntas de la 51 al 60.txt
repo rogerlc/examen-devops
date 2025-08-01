@@ -1,0 +1,69 @@
+51/78: What is the purpose of /proc folder?
+essential system binaries
+process and kernel information files
+application cache data
+libraries and kernel modules
+non of the above
+
+
+52/78: Where is the home directory for root user?
+/etc/root
+/home/root
+/root
+
+
+53/78: How to list all packages installed in the system and in remote repositories?
+yum repolist
+yum list installed && yum list available
+yum info
+yum list
+
+54/78: What are daemons?
+Daemons are demons (It's typo!).
+Daemons are special code in kernel module that may not be available at boot time. Daemons are installed by request in runtime.
+Daemons are services that provide several functions to communicate with Windows machines.
+Daemons are services that provide several functions that may not be available under the base operating system. Its main task is to listen for service request and at the same time to act on these requests.
+
+
+
+55/78: Which are not Linux native file systems?
+ext3
+FAT32
+XFS
+ext4
+NTFS
+
+56/78: Given the sample line from /etc/passwd, what command will show configured shells only? vboxadd:x:996:1::/var/run/vboxadd:/bin/false
+Oawk-F':' '{print $6}' /etc/passwd
+awk '{print $7}' /etc/passwd
+awk-F':' '{print $7}' /etc/passwd
+awk '{print $6}' /etc/passwd
+
+
+57/78: What scp command(s) will copy file data.txt to target user's home folder on VM h1?
+$ scp-i john data.txt operator@h1:/home/operator/
+$ scp-i john-/data.txt john@h1
+$ scp-i john-/data.txt john@h1:~/
+$ scp data.txt user@h1:~/
+
+
+58/78: What does the following command do? usermod -g hello world
+creates user world with password hello
+adds user world to group hello
+changes the global identifier of a user from hello to world
+changes the primary group of user world to hello
+
+
+59/78: What is swap space used for?
+direct RAM extension for regular use
+non of the above
+storing inactive inactive memory pages when RAM is full
+storing old system files
+
+60/78: On top of which OS was Linux originally developed?
+Solaris
+Debian
+FreeBSD
+Windows
+MINIX
+

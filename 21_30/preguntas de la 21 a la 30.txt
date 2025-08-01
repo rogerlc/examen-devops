@@ -1,0 +1,64 @@
+21/78: The command that will display the size of the command history list in bash shell?
+echo $HISTSIZE
+history size
+echo $PATH
+echo $HISTFILE
+
+22/78: What is the purpose of LVMs?
+Snapshots allow you to backup a frozen copy of the file system, while keeping service downtime to a minimum.
+Use any number of disks as one big disk.
+Have logical volumes stretched over several disks.
+Create small logical volumes and resize them "dynamically" as they get more filled.
+
+23/78: What is the purpose of crond?
+Executing tasks on a set schedule
+Loading kernel modules
+Loading programs on system boot
+Executing tasks when prompted by user
+
+24/78: How to generate ssh key in bash script?
+ssh-keygen -t rsa -f $1 -b 4096
+it's not feasable because you must enter passphrase
+ssh-keygen -t rsa -f key
+ssh-keygen -t rsa -f privkey-N"
+
+25/78: How to check inodes usage?
+inodes --list
+inodes -L
+du-i
+df-i
+
+26/78: Which command will show the packages containing the queried file?
+yum provides filename
+yum help filename
+yum search filename
+yum list filename
+
+
+27/78: Which exit codes are possible in Linux? (choose 2)
+from 1 to 1024
+0
+-1
+from 1 to 255
+
+
+
+28/78: Which Linux distribution is the upstream source of Ubuntu?
+Slackware Linux
+Red Hat Enterprise Linux
+non of the above
+Debian
+
+
+29/78: An administartor wanted to completely disable swap (which was configured as /swap file) on a system. He did: $ sudo swapoff/swap. After some time the system was rebooted and it turned out that swap was still enabled. What was the issue?
+administrator should have run "swapoff-v/swap"
+administrator forgot to edit /etc/fstab
+it's a normal behavior, system cannot run without swap
+administrator didn't reboot the system right after command execution
+
+
+30/78: What file contains settings / commands for interactive non-login shell, i.e. shell started via “Terminal" icon in Gnome.
+~/.bashrc
+~/.bash_profile
+/etc/bash.bashrc
+/etc/shells

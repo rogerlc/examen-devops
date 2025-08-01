@@ -1,0 +1,70 @@
+61/78: What is the purpose of a PID file?
+Stores child processes' IDs to be used by systemd
+Contains the process ID of a given program
+Used by systemd to trace parent process
+
+
+62/78: What command(s) will show all listening ports alongside with services names?
+$ sudo ps-a-net
+$ sudo netstat -tulnap
+OS netstat-tulnap
+$ netstat -as
+
+63/78: How to check exit code of previously executed command in console?
+echo $exitcode
+echo $?
+echo $#
+echo $code
+
+64/78: How to update wget package?
+yum check-update wget
+yum update
+yum update wget
+yum provides wget
+
+65/78: What command(s) will show MX records for epam.com?
+dig @8.8.8.8 -t MX epam.com
+nslookup epam.com
+nslookup -querytype=MX epam.com
+dig @MX epam.com
+
+
+66/78: How to start a daemon in Linux? Let's say this is httpd.
+systemctl httpd start
+service httpd start
+daemon httpd start
+systemctl start httpd
+
+
+67/78: What is a "proc" filesystem?
+The proc filesystem is a pseudo-filesystem which provides an interface to application and user utililties
+The proc filesystem is a pseudo-filesystem which provides an interface to kernel data structures.
+The proc filesystem is an ext3 filesystem which contains kernel configuration files.
+
+68/78: What is the definition of OS kernel?
+
+a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer's operating system in a consistent manner.
+
+computer program designed to interpret a sequence of lines of text which may be entered by a user, read from a file or another kind of data stream.
+
+small program that starts booting sequence. This small program's only job is to load other data and programs which are then executed from RAM.
+
+a computer program that is the core of a computer's operating system, with complete control over everything in the system.
+
+
+69/78: How can you check the memory status?
+Use memory command (.e.g, memory --display)
+Read /proc/meninfo file
+Use free command (e.g, free-g)
+External monitoring tools are required (e.g, Prometheus and Grafana)
+
+
+70/78: Which of the following will execute "whoami" command under user "test"?
+su test -c "whoami"
+Non of the above
+su-test -c "whoami"
+sudo -u test whoami
+
+
+
+

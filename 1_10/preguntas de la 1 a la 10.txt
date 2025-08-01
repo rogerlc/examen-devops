@@ -1,0 +1,72 @@
+1/78: In what file are you likely to find the following lines? "domain google.com nameserver 8.8.8.8 nameserver 10.10.10.1"
+/etc/hosts
+/etc/fstab
+/etc/services
+/etc/resolv.conf
+
+
+2/78: What are the default ports used for DNS, SSH?
+SSH: UDP/22 port
+DNS TCP/53 port
+DNS: UDP/53 port
+SSH: TCP/22 port
+
+
+3/78: How to exit from vi editors?
+Choose File-> Close in main menu
+Press ZZ in normal mode
+Use:wq command saves the current work and exits the VI.
+Use:q! command exits the VI without saving current work.
+
+
+4/78: How to install vim in Ubuntu?
+sudo apt install vim
+sudo yum install vim
+sudo apt-install vim
+sudo apt-get install vim
+
+
+5/78: What is the UID of the root user?
+10
+1
+0
+100
+
+
+6/78: Which of the following commands install openjdk package on Centos 7?
+alternatives --config java-1.8.0-openjdk
+yum install java-1.8.0-openjdk
+wget https://openjdk.java.net/install/openjdk-11*_bin.tar.gz
+rpm -i openjdk8.rpm
+apt-get install openjdk-8-jre
+4
+
+
+7/78: Correct permissions for .ssh dir are ...
+300
+600
+500
+400
+
+8/78: What does the following command do? userdel le_user
+deletes group le_user
+deletes /home/le_user directory
+deletes user le_user
+
+
+9/78: What is sticky bit used for in Linux?
+To prevent deletion of files owned by other users in shared folders
+To prevent execution of files owned by other users in shared folders
+To execute files under the users who created the file
+
+
+10/78: Which file extensions make file executable on Linux?
+non of the above
+.bash
+.sh
+.magic
+.exe
+.run
+
+
+

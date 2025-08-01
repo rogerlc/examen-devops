@@ -1,0 +1,70 @@
+31/78: What are the kinds of permissions under Linux?
+Read: users may read the files or list the directory
+Create: users may create new files and directories
+Append: users may append text to the file
+Execute: users may run the file or lookup a specific file within a directory
+Write: users may write to the file of new files to the directory
+
+
+32/78: What is suid bit used for?
+To allow running bash scripts with permissions of the user owning the script
+To prevent the change of file ownership
+To prevent execution of files owned by other users in shared folders
+To allow running applications with permissions of the user owning the file
+
+
+33/78: What do you do if your system is SLOW?
+Check if it's network related with sar
+Check I/O stats with iostat
+Run dstat -t to check if it's related to disk or network.
+Check with top for anything unusual
+
+34/78: What utility is used to display open ports on local machine?
+netcat
+iptables
+netstat
+Isports
+
+
+35/78: Which runlevels will typically lock you out of the system after reboot when set as default?
+5
+6
+2
+3
+
+
+36/78: Select all valid sha-bang's:
+#!/bin/env bash
+#!/usr/bin/env python
+#!/bin/rm
+#!/bin/cp
+
+
+37/78: What command(s) will show contents of archive file:
+Jmtar archive.tar.gz
+tar-tf archive.tar.gz
+tar --show -f archive.tar.gz
+tar--sf archive.tar.gz
+
+
+38/78: What would the permissions be after running command "chmod 754 file"?
+-rwxr-xr--
+-r-xr-xr--
+-rwxrwxrw-
+-rwxr--r--
+
+
+39/78: What command(s) will add a route to network 10.0.0.0/8 via network interface wlp2s0?
+route add-net 10.0.0.0 netmask 255.0.0.0 dev wlp2s0
+route set-network 10.0.0.0/8 -gateway wlp2s0
+ip route add 10.0.0.0/8 dev wlp2s0
+ip address add 10.0.0.0/8 dev wlp2s0
+
+
+40/78: What command(s) will overwrite target file without prompting:
+cp-i source_file target_file
+cp source_file target_file
+mv source_file target_file
+mv-f source_file target_file
+
+

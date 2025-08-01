@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Linux Exam - Questions 71 to 78</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f4f4; padding: 20px; }
+    .question { background: #fff; padding: 15px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    label.correct {
+      background-color: #d4edda;
+      color: #155724;
+      font-weight: bold;
+      display: block;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    label.incorrect {
+      background-color: #f8d7da;
+      color: #721c24;
+      font-weight: bold;
+      display: block;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    .explanation { display: none; margin-top: 10px; background: #eef; padding: 10px; border-left: 5px solid #00f; border-radius: 5px; }
+    button { margin: 5px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    .btn-grade { background-color: #4CAF50; color: white; }
+    .btn-explanation { background-color: #2196F3; color: white; }
+    .btn-review { background-color: #FF9800; color: white; }
+    .btn-reset { background-color: #f44336; color: white; }
+  </style>
+</head>
+<body>
+  <h1>Linux Exam - Questions 71 to 78</h1>
+  <div id="quiz"></div>
+
+  <button class="btn-grade" onclick="grade()">✅ Grade</button>
+  <button class="btn-explanation" onclick="showExplanations()">📘 Show Explanations</button>
+  <button class="btn-review" onclick="review()">🔄 Review</button>
+  <button class="btn-reset" onclick="resetQuiz()">🔁 Reset</button>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+  <script>
+    window.onload = function () {
+      const quizDiv = document.getElementById('quiz');
+
+      questions.forEach((q, index) => {
+        const div = document.createElement('div');
+        div.className = 'question';
+
+        let html = `<p>${index + 1}. ${q.question}</p>`;
+        const type = Array.isArray(q.correct) && q.correct.length > 1 ? 'checkbox' : 'radio';
+
+        q.options.forEach(opt => {
+          html += `<label><input type="${type}" name="q${index + 1}" value="${opt.replace(/"/g, '&quot;')}"> ${opt}</label><br>`;
+        });
+
+        html += `<div class="explanation">${q.explanation}</div>`;
+        div.innerHTML = html;
+        quizDiv.appendChild(div);
+      });
+    };
+  </script>
+</body>
+</html>
