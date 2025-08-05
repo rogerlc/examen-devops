@@ -3,7 +3,12 @@ const preguntas = [
     question: '¿Cómo imprimir todas las variables de entorno para el usuario actual?',
     options: ['echo (env)', 'envvars', 'env|sort', 'uservars'],
     correct: 'env|sort',
-    explanation: 'El comando correcto es <code>env | sort</code>, que lista todas las variables de entorno ordenadas alfabéticamente. Las otras opciones no son comandos válidos en Linux.'
+    explanation: `✅ env | sort Esta opción utiliza el comando env para listar todas las variables de entorno, y sort para ordenarlas alfabéticamente.<br>
+Explicación de las otras opciones:<br>
+❌ echo (env) → Sintaxis incorrecta en Bash. Podría funcionar en otros shells como fish, pero no en los más comunes como Bash o Zsh. <br>
+❌ envvars → No es un comando válido en la mayoría de sistemas Unix/Linux. <br>
+❌ uservars → Tampoco es un comando estándar.`
+    
   },
   {
     question: '¿Dónde se almacena la tabla de montaje inicial de volúmenes?',
@@ -87,3 +92,4 @@ const preguntas = [
     explanation: 'Un proceso zombie es aquel que terminó, pero su padre no ha recogido su estado, por lo que permanece en la tabla de procesos.'
   }
 ];
+
